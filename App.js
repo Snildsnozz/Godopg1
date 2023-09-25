@@ -1,23 +1,15 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import React from 'react';
-import NavigationBar from './Components/search_component.js';
+import React, { useState } from 'react'; // Import useState correctly
+import TabNavigator from './Components/TabNavigator';
+import { View, Button, Text} from 'react-native'; // Import Button from react-native
 
-export default function App() {
+
+function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-      <NavigationBar/>
-    </View>
+      <TabNavigator />
+
+    
+   
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
