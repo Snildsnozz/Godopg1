@@ -8,13 +8,14 @@ import SettingsScreen from './SettingsScreen';
 import SearchScreen from './SearchScreen';
 import { SafeAreaView } from 'react-native';
 
+
 const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
   return (
     <SafeAreaView style={{ flex: 1 }}>    
     <NavigationContainer>
-      {/* tab abr should be displayed in the bottum of the screen show me the code */}
+      {/* tab bar should be displayed in the bottum of the screen show me the code */}
       <Tab.Navigator
         initialRouteName="Profile"
         tabBarOptions={{
@@ -67,6 +68,5 @@ const TabNavigator = () => {
     </NavigationContainer>
     </SafeAreaView>
   );
-};
-
+}
 export default TabNavigator;
