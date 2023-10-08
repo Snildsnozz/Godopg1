@@ -1,3 +1,4 @@
+import GlobalStyles from '../globalStyles/GlobalStyles';
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
 
@@ -12,8 +13,8 @@ const ProfileScreen = () => {
   };
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.header}>Mere information om dig</Text>
+    <View style={GlobalStyles.container}>
+      <Text style={GlobalStyles.profileHeadline}>Mere information om dig</Text>
 
       <TextInput
         style={styles.input}
@@ -43,7 +44,7 @@ const ProfileScreen = () => {
         onChangeText={(text) => setPreferredfagFraUni(text)}
       />
 
-      <Button title="Save Profile" onPress={handleSaveProfile} />
+      <Button style={GlobalStyles.button} title="Save Profile" onPress={handleSaveProfile} />
     </View>
   );
 };
